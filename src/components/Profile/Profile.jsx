@@ -1,8 +1,10 @@
+import css from "./Profile.module.css"
+
 export default function Profile({ name, tag, location, image, stats }) {
   return (
-    <div>
+    <div className={css.container}>
       <div>
-        <img src={image} alt={name} />
+        <img className={css.image} src={image} alt={name} />
         <p>{name}</p>
         <p>{tag}</p>
         <p>{location}</p>
